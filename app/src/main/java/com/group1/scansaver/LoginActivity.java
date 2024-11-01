@@ -27,12 +27,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void onClickForgot(View v){
-        Toast.makeText(this, "You forgot PAssword Clicked",
+        Toast.makeText(this, "You forgot Password Clicked",
                 Toast.LENGTH_LONG).show();
     }
 
     public void onClickCreateNew(View v){
-        Toast.makeText(this, "Create New Account CLicked",
+        Toast.makeText(this, "Create New Account Clicked",
                 Toast.LENGTH_LONG).show();
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
