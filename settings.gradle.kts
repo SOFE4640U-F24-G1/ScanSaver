@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ScanSaver"
 include(":app")
- 
+// dummy 2 
