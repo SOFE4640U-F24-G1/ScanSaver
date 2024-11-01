@@ -4,12 +4,14 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.group1.scansaver.R;
 import com.group1.scansaver.databinding.FragmentDashboardBinding;
 
 public class DashboardFragment extends Fragment {
@@ -26,6 +28,18 @@ public class DashboardFragment extends Fragment {
 
         final TextView textView = binding.textDashboard;
         dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+
+        //TEST CODE
+        LinearLayout itemLayout = binding.scrollerInner;
+        for (int i = 0; i <= 5; i++){
+
+            View itemCard = inflater.inflate(R.layout.item_card, itemLayout, false);
+            itemLayout.addView(itemCard);
+        }
+
+        ///////
+
+
         return root;
     }
 
