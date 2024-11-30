@@ -1,5 +1,8 @@
 [versions]
 agp = "8.6.0"
+cameraCoreVersion = "1.4.0"
+cameraLifecycleVersion = "1.4.0"
+cameraViewVersion = "1.4.0"
 junit = "4.13.2"
 junitVersion = "1.2.1"
 espressoCore = "3.6.1"
@@ -10,8 +13,19 @@ lifecycleLivedataKtx = "2.6.1"
 lifecycleViewmodelKtx = "2.6.1"
 navigationFragment = "2.6.0"
 navigationUi = "2.6.0"
+legacySupportV4 = "1.0.0"
+activity = "1.9.2"
+cameraCore = "1.4.0"
+firebaseCrashlyticsBuildtools = "3.0.2"
+cameraLifecycle = "1.4.0"
+cameraView = "1.4.0"
+playServicesLocation = "21.3.0"
 
 [libraries]
+androidx-camera-camera2 = { module = "androidx.camera:camera-camera2", version.ref = "cameraCoreVersion" }
+androidx-camera-core-v150 = { module = "androidx.camera:camera-core", version.ref = "cameraCoreVersion" }
+androidx-camera-lifecycle-v150 = { module = "androidx.camera:camera-lifecycle", version.ref = "cameraLifecycleVersion" }
+camera-view-v150 = { module = "androidx.camera:camera-view", version.ref = "cameraViewVersion" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -22,6 +36,13 @@ lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-lived
 lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
 navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+legacy-support-v4 = { group = "androidx.legacy", name = "legacy-support-v4", version.ref = "legacySupportV4" }
+activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "cameraCore" }
+firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
+camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "cameraLifecycle" }
+camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "cameraView" }
+play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playServicesLocation" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

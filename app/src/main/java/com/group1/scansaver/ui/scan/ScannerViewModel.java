@@ -1,16 +1,15 @@
-package com.group1.scansaver.ui.notifications;
+package com.group1.scansaver.ui.scan;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class NotificationsViewModel extends ViewModel {
-
+public class ScannerViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
-    public NotificationsViewModel() {
+    public ScannerViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is notifications fragment");
+        mText.setValue("Please Login To Scan Barcodes");
     }
 
     public LiveData<String> getText() {

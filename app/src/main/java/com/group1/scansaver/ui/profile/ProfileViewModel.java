@@ -1,16 +1,16 @@
-package com.group1.scansaver.ui.home;
+package com.group1.scansaver.ui.profile;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class ProfileViewModel extends ViewModel {
 
     private final MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public ProfileViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("Favourites");
+        mText.setValue("You Must Login To View Your Profile");
     }
 
     public LiveData<String> getText() {
